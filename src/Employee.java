@@ -1,4 +1,4 @@
-public class Employee {
+public abstract class Employee {
     private String name;
     private String code;
     private String sdt;
@@ -44,4 +44,14 @@ public class Employee {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public Employee(String name, String code, String sdt, String email, int age) {
+        this.name = name;
+        this.code = code;
+        this.sdt = sdt;
+        this.email = email;
+        this.age = age;
+    }
+
+    public abstract int getSalaryOfEmployee();
 }
